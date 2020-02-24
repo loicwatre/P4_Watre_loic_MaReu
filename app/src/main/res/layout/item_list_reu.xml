@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/item_list_user_avatar"
+        android:id="@+id/item_list_reu_avatar"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
@@ -19,26 +19,73 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@android:color/darker_gray" />
 
+    <ImageButton
+        android:id="@+id/item_list_reu_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/item_list_reu_room"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_delete_24dp" />
+
     <TextView
-        android:id="@+id/item_list_user_username"
+        android:id="@+id/item_list_reu_reuname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="37dp"
         android:text="TextView"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/item_list_user_avatar"
-        app:layout_constraintStart_toEndOf="@+id/item_list_user_avatar"
-        app:layout_constraintTop_toTopOf="@+id/item_list_user_avatar" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_reu_hour"
+        app:layout_constraintStart_toEndOf="@+id/item_list_reu_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/item_list_user_delete_button"
+    <TextView
+        android:id="@+id/item_list_reu_room"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="@+id/item_list_user_username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/item_list_user_username"
-        app:srcCompat="@drawable/ic_delete_24dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="37dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_reu_delete_button"
+        app:layout_constraintStart_toEndOf="@+id/item_list_reu_hour"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_list_reu_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="37dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_list_reu_room"
+        app:layout_constraintStart_toEndOf="@+id/item_list_reu_reuname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_list_reu_email"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/item_list_reu_room"
+        app:layout_constraintStart_toStartOf="@+id/item_list_reu_reuname"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_reu_hour" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

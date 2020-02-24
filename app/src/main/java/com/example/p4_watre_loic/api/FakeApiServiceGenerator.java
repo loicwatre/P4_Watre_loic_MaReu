@@ -12,8 +12,8 @@ public abstract class FakeApiServiceGenerator {
     }
 
     public static List<Reu> FAKE_REUNIONS = Arrays.asList(
-            new Reu("Réunion A", "14h", "mario",""),
-            new Reu("Réunion B", "15h", "peach",""),
-            new Reu("Réunion C", "16h", "luigi","")
+            new Reu("Réunion A", "14h", "mario","maxime@lamazone.com,alex@lamazone.com"),
+            new Reu("Réunion B", "15h", "peach","paul@lamazone.com,viviane@lamazone.com"),
+            new Reu("Réunion C", "16h", "luigi","amandine@lamazone.com,luc@lamazone.com")
     );
 }

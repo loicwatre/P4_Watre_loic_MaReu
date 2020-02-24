@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.réu_list.New_Reu">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activity_new-reu_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="24dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toTopOf="@+id/activity_new_reu_entername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/activity_new_reu_returnbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_dialog_close_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_new_reu_name"
+        android:layout_width="59dp"
+        android:layout_height="19dp"
+        android:text="New Reu"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_new-reu_toolbar"
+        app:layout_constraintEnd_toStartOf="@+id/activity_new_reu_validebutton"
+        app:layout_constraintStart_toEndOf="@+id/activity_new_reu_returnbutton"
+        app:layout_constraintTop_toTopOf="@+id/activity_new-reu_toolbar" />
+
+    <ImageButton
+        android:id="@+id/activity_new_reu_validebutton"
+        android:layout_width="39dp"
+        android:layout_height="40dp"
+        android:background="#00000000"
+        android:clickable="true"
+        android:src="@drawable/ic_group_collapse_15"
+        android:tint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/activity_new_reu_entername"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/activity_new_reu_enterhour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_new-reu_toolbar"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/activity_new_reu_enterhour"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/activity_new_reu_enterroom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_new_reu_entername"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/activity_new_reu_enterroom"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/activity_new_reu_enteremail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_new_reu_enterhour"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/activity_new_reu_enteremail"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="270dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_new_reu_enterroom"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
